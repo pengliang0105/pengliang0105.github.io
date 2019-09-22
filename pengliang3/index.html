@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		<table border="2" width="900px" height="100px" style="border-collapse: collapse;" align="center">
+		<caption>高考志愿表</caption>
+		<tr>
+			<td rowspan="3">考生基本信息</td>
+			<td colspan="3">姓名<input type="text"></td>
+			<td colspan="3">考号<input type="number"></td>
+			<td colspan="3">身份证号<input type="text"></td>
+			<td rowspan="3" colspan="2"  height="130" width="120"><img src="img/0c9658d8737fd8823f77935578d5b81d (1).jpg" height="100%" width="100%"></td>
+		</tr>
+		<tr>
+			<td colspan="3">毕业学校<input type="text"></td>
+			<td colspan="3">学籍号<input type="text"></td>
+			<td colspan="3">籍贯
+             <input list="shenfen">
+
+             <datalist id="shenfen">
+                <option value="湖南">
+                <option value="湖北">
+                <option value="江苏">
+                <option value="上海">
+            </datalist> 
+		</tr>
+		<tr>
+			<td colspan="3">性别<input type="radio" name="sex"/>男
+			                  <input type="radio" name="sex"/>女
+			</td>
+			<td colspan="3">出生日期<input type="date"/></td>
+			<td colspan="3">民族<input type="checkbox" name="minzu"/>汉族
+			                  <input type="checkbox" name="minzu"/>少数民族
+			</td>
+		</tr>
+        <tr>		
+		<td rowspan="3" >特长</td>
+		<td colspan="11" rowspan="3"><input type="text"  style="font-size:25pt"/></td>
+		</tr>
+		<tr>
+		</tr>
+		<tr>
+		</tr>
+		<tr>
+		</tr>
+		<tr>		
+		<td rowspan="3" >获得奖项</td>
+		<td colspan="11" rowspan="3"><input type="text" style="font-size:25pt"/></td>
+		</tr>
+		<tr>
+		</tr>
+		<tr>
+		</tr>
+		<tr>
+		</tr>
+		<tr>	
+	   
+		<tr align="center">	
+	    <td rowspan="11">本科一批</td>
+		<td>志愿顺序</td>
+		<td>学校名称</td>
+		<td>学校代码</td>
+		<td>专业一</td>
+		<td>专业二</td>
+		<td>专业三</td>
+		<td>专业四</td>
+		<td>专业五</td>
+		<td>专业六</td>
+		<td colspan="2">是否服从调剂</td>
+		</tr>
+		<tr>	
+		<td>一志愿</td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="radio" name="sex"/>是</td>
+		<td><input type="radio" name="sex"/>否</td>
+		</tr>
+		<tr>
+		<td>二志愿</td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="radio" name="sex"/>是</td>
+		<td><input type="radio" name="sex"/>否</td>
+		</tr>
+		<tr>
+		<td>三志愿</td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="radio" name="sex"/>是</td>
+		<td><input type="radio" name="sex"/>否</td>
+		</tr>
+		<tr>
+		<td>四志愿</td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="radio" name="sex"/>是</td>
+		<td><input type="radio" name="sex"/>否</td>
+		</tr>
+		<tr>	
+		<td>五志愿</td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="radio" name="sex"/>是</td>
+		<td><input type="radio" name="sex"/>否</td>
+		</tr>
+		<tr>	
+		<td>六志愿</td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="radio" name="sex"/>是</td>
+		<td><input type="radio" name="sex"/>否</td>
+		</tr>
+		<tr>
+		<td>七志愿</td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="radio" name="sex"/>是</td>
+		<td><input type="radio" name="sex"/>否</td>
+		</tr>
+		<tr>
+		<td>八志愿</td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="radio" name="sex"/>是</td>
+		<td><input type="radio" name="sex"/>否</td>
+		</tr>
+		<tr>
+		<td>九志愿</td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="radio" name="sex"/>是</td>
+		<td><input type="radio" name="sex"/>否</td>
+		</tr>
+		<tr>
+		<td>十志愿</td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="radio" name="sex"/>是</td>
+		<td><input type="radio" name="sex"/>否</td>
+		</tr>
+	     <td rowspan="12" align="center">本科二批</td>
+		</tr>
+		<tr>	
+		<td>一志愿</td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="radio" name="sex"/>是</td>
+		<td><input type="radio" name="sex"/>否</td>
+		</tr>
+		<tr>
+		<td>二志愿</td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="radio" name="sex"/>是</td>
+		<td><input type="radio" name="sex"/>否</td>
+		</tr>
+		<tr>
+		<td>三志愿</td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="radio" name="sex"/>是</td>
+		<td><input type="radio" name="sex"/>否</td>
+		</tr>
+		<tr>
+		<td>四志愿</td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="radio" name="sex"/>是</td>
+		<td><input type="radio" name="sex"/>否</td>
+		</tr>
+		<tr>
+		<td>五志愿</td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="radio" name="sex"/>是</td>
+		<td><input type="radio" name="sex"/>否</td>
+		<tr/>
+		<tr>	
+		<td>六志愿</td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="radio" name="sex"/>是</td>
+		<td><input type="radio" name="sex"/>否</td>
+		</tr>
+		<tr>
+		<td>七志愿</td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="radio" name="sex"/>是</td>
+		<td><input type="radio" name="sex"/>否</td>
+		</tr>
+		<tr>
+		<td>八志愿</td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="radio" name="sex"/>是</td>
+		<td><input type="radio" name="sex"/>否</td>
+		</tr>
+		<tr>
+		<td>九志愿</td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="radio" name="sex"/>是</td>
+		<td><input type="radio" name="sex"/>否</td>
+		</tr>
+		<tr>
+		<td>十志愿</td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="text" style="font-size:5pt"></td>
+		<td><input type="radio" name="sex"/>是</td>
+		<td><input type="radio" name="sex"/>否</td>
+		</tr>
+		</table>
+	</body>
+</html>
