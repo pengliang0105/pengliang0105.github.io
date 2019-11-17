@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="utf-8">
+    <title>学生登记表</title>
+    <style>
+		
+
+			.title
+			{
+				width:500px;
+				text-align: center;
+				height:50px;
+				margin: auto;
+				margin-top:20px ;
+               font-family:"微软雅黑";
+               font-style: initial;
+               font-size:25px;
+               background-color: ;
+               font-weight: 500;
+			}
+			button
+			{
+				width: 60px;
+				height: 30px;
+				text-align: center;
+				font-size:18px;
+				background-color:#F6F6F6 ;
+				 font-family:"微软雅黑";
+				border-radius: 5px;
+				border: none;
+				cursor: pointer;
+				outline: none;
+			}
+			button:hover
+			{
+				 box-shadow: 0 5px 5px 0 rgba(0,0,0,0.15);
+			}
+			button:active
+			{
+				transform: translateY(0.5px);
+			}
+			table{
+				text-align: center;
+			}
+		</style>
+</head>
+<body>
+<center>
+    <div class="title">学&nbsp;&nbsp;&nbsp;&nbsp;生&nbsp;&nbsp;&nbsp;&nbsp;信&nbsp;&nbsp;&nbsp;&nbsp;息&nbsp;&nbsp;&nbsp;&nbsp;登&nbsp;&nbsp;&nbsp;&nbsp;记&nbsp;&nbsp;&nbsp;&nbsp;表</div>
+	    <hr />
+	    <br />
+	     <br />
+	     <form>
+    姓名: <input type="text"  id="name" />  email: <input type="email" id="email">  生日:<input type="month" id="daymonth"><br><br>
+    <button type="reset">重置</button></form>
+    <br />
+    <button id="addUser">提交</button>
+    <br><br>
+    <tbody>
+       <table      border="2px" height="35px" width="500px"style="border-collapse: collapse;" id="usertable" >
+        
+        <tr>
+            <th>姓名</th>
+            <th>email</th>
+            <th>生日</th>
+            <th> </th>
+        </tr>
+        <tr>
+            <td>lailia</td>
+            <td>3491698148@qq.com</td>
+            <td>2001-01</td>
+            <td><a href="#">删除</a></td>
+        </tr>
+        </tbody>
+    </table>
+</center>
+</body>
+ 
+<script language="JavaScript">
+    document.getElementById("addUser").onclick = function(){
+        var nameValue = document.getElementById("name").value;
+        var emailValue = document.getElementById("email").value;
+        var monthValue = document.getElementById("daymonth").value;
+        var tr = document.createElement("tr");
+        var nameTd = document.createElement("td");
+        var nameText = document.createTextNode(nameValue);
+        nameTd.appendChild(nameText);
+ 
+        var emailTd = document.createElement("td");
+        var emailText = document.createTextNode(emailValue);
+        emailTd.appendChild(emailText);
+ 
+        var monthTd = document.createElement("td");
+        var monthText = document.createTextNode(monthValue);
+        monthTd.appendChild(monthText);
+ 
+        var aTd = document.createElement("td");
+        var a = document.createElement("a");
+        a.setAttribute("href","deleteEmp?id="+nameValue);
+        var aText = document.createTextNode("删除");
+        a.appendChild(aText);
+        aTd.appendChild(a);
+ 
+        tr.appendChild(nameTd);
+        tr.appendChild(emailTd);
+        tr.appendChild(monthTd);
+        tr.appendChild(aTd);
+ 
+        var table = document.getElementById("usertable");
+ 
+        var tbody = document.createElement("tbody");
+ 
+        tbody.appendChild(tr);
+        table.appendChild(tbody);
+ 
+        a.onclick = function(){
+            var trElement = a.parentNode.parentNode;
+ 
+            var nameElement = trElement.firstChild.firstChild.nodeValue;
+ 
+            var flag = window.confirm("你确认要删除"+nameElement+"这个用户吗?");
+ 
+            if(!flag){
+                return false;
+            }else{
+                
+                var parentElement = trElement.parentNode;
+ 
+                parentElement.removeChild(trElement);
+ 
+                return false;
+            }
+        }
+    }
+ 
+</script>
+ 
+</html>
