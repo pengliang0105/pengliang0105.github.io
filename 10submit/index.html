@@ -41,8 +41,8 @@
 			{
 				margin: auto;
 				width: 880px;
-				height: 400px;
-				background-image: linear-gradient(white ,rgb(233,189,189,0.3));
+				height: 650px;
+				background-image: linear-gradient(white ,rgb(237,224,224,0.4));
 			}
 			.en{
 		   height: 70px;
@@ -55,7 +55,14 @@
 				width: 600px;
 				height: 60px;
 				border-radius:9px ;
+				text-align: center;
 			}
+			input:focus{
+    border-color: #66afe9;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(241,192,165,0.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(241,192,165,0.6)
+}
 		</style>
 	</head>
 	<body>
@@ -64,11 +71,39 @@
 		<div class="en">	<font style="font-family: CuldesacRegular;font-size: 40px;color: rgb(251,189,115,0.6);text-align: center;">HADDY HELP</font></div>
 		<div class="small"style="background-color: rgb(245,245,245,0.6) ;text-align: center;">
 			<div style="height:15px;width: 880px;"></div>
-			<font style=" font-family: '微软雅黑';color: #777777;font-size:20px;" >服务项目:</font><input type="" />
+			<font style=" font-family: '汉仪乐喵体Regular';color: #777777;font-size:25px;" >服&nbsp;务&nbsp;项&nbsp;目&nbsp;:&nbsp;</font>
+			<select  style="border-color: #D9D9D9;border-radius:3px;width: 200px;height:30px;"/>
+	     <option >代取快递</option>
+	     <option >代拿外卖</option>
+	     <option >代买零食</option>
+	     <option >其他</option>
+			</select>
 		</div>
-		<div class="small"style="background-color:  #FFFFFF ;"></div>
-		<div class="small"style="background-color: rgb(245,245,245,0.6);"></div>
-		<div class="small"style="background-color: ##FFFFFF ;"></div>
+		<div class="small"style="background-color:  #FFFFFF ;">
+			<div style="height:15px;width: 880px;"></div>
+			<font style=" font-family: '汉仪乐喵体Regular';color: #777777;font-size:25px;" >添&nbsp;加&nbsp;地&nbsp;址&nbsp;:&nbsp;</font>
+			<input  style="border-radius:3px;border: 1px solid #ccc;padding:0px,3px;font-size:13px;width: 200px;height:24px;"/>
+		</div>
+		<div class="small"style="background-color: rgb(245,245,245,0.6);">
+			<div style="height:15px;width: 880px;"></div>
+			<font style=" font-family: '汉仪乐喵体Regular';color: #777777;font-size:25px;" >联&nbsp;系&nbsp;方&nbsp;式&nbsp;:&nbsp;</font>
+			<input  style="border-radius:3px;border: 1px solid #ccc;padding:0px,3px;font-size:13px;width: 200px;height:24px;"/>
+		</div>
+
+		<div class="small"style="background-color: #FFFFFF;">
+			<div style="height:15px;width: 880px;"></div>
+			<font style=" font-family: '汉仪乐喵体Regular';color: #777777;font-size:25px;" >完&nbsp;成&nbsp;时&nbsp;间&nbsp;:&nbsp;</font>
+			<input  style="border-radius:3px;border: 1px solid #ccc;padding:0px,3px;font-size:13px;width: 200px;height:24px;"/>
+		</div>
+		
+		<div class="small"style="background-color: rgb(245,245,245,0.6);height: 240px;">
+			<div style="height:15px;width: 880px;"></div>
+			<font style=" font-family: '汉仪乐喵体Regular';color: #777777;font-size:25px;" >备&nbsp;注&nbsp;:&nbsp;</font><br />
+			<input  style="border-radius:3px;border: 1px solid #ccc;padding:0px,3px;font-size:13px;width: 320px;height:170px;"/>
+		</div>
+		<center>
+		<button style="font-size:30px;font-family:汉仪乐喵体Regular ;background-color: #FFFFFF;border-color: white;cursor: pointer;outline: none;width: 200px;height: 40px;border:0px;border-radius:5px;box-shadow: 0px 5px 10px 5px rgba(74,115,255,0.1);">提&nbsp;&nbsp;交</button>
+		</center>
 		</div>
 	</body>
 </html>
